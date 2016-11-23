@@ -1,0 +1,37 @@
+高级自动化钓鱼框架PhishLulz已经发布，是灾难还是救星？
+特点
+
+该钓鱼框架主要是基于PhishingFrenzy和BeEF两大开源项目组建而成，从理论上来说，它有着那么几大特性。
+
+这个钓鱼框架可以建立一个SPF记录。也就是说，如果域名没有设置SPF记录，那么可以被该钓鱼框架伪造邮件。让我最感兴趣的还是它可以轻易的躲避垃圾邮件过滤器，成功的让对方收到钓鱼邮件。于此同时，它还可以通过图表记录钓鱼成功的人数，区域划分，目标IP地址等等信息。
+
+工具介绍
+
+phish_lulz：启动或者停止钓鱼攻击
+
+tools/find_resources：多线程子域名扫描和指纹扫描
+
+tools/mailboxbug: 多线程email数据发送模块
+
+tools/mail_parser：从.eml文件中提取HTML和TXT数据
+namecheap_wrapper: 自动化注册域名
+
+默认登陆口令
+
+MySQL root user: phishlulz_mysql
+
+PhishingFrenzy admin user: phishlulz_frenzy
+
+BeEF beef user: phishlulz_beef
+
+要求
+
+1.亚马逊AWS的账号（在配置文件config.yaml处写上配置信息）
+
+2.不得是windows或者Mac OS系统
+
+3.具有ssh, scp和openssl服务
+
+4.具有Ruby环境
+
+5.Gecko或者Chrome内核类型的浏览器（比如firefox或者chrome浏览器）
